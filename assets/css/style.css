@@ -1,0 +1,285 @@
+.main{
+  width: 100%;
+  background-image: url(/assets/image/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  height: var(--header-height);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav .logo {
+  width: 55px;
+  cursor: pointer;
+}
+
+nav .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+nav .menu li {
+  display: inline-block;
+  margin: 10px 20px;
+  list-style: none;
+}
+nav .menu li .menu-link{
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  font-size: 1.6rem;
+}
+
+.logoNSlogan__wrapper{
+  display: flex;
+}
+
+.Slogan{
+  font-family: "Caveat", cursive;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding-left: 20px;
+  color: #797979;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-effect{
+  width: 0px;
+  height: 2px;
+  background-color: #3d6ef7;
+  position: fixed;
+  pointer-events: none;
+  transition: all 0.25s linear;
+}
+
+.dark{
+  width: 40px;
+  cursor: pointer;
+}
+
+/* body */
+section {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - var(--header-height));
+}
+
+section .intro--wrapper--greeting{
+  position: relative;
+  right: 20px;
+  height: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+section .intro--wrapper--greeting h2{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0.5;
+  line-height: 30px;
+  color: #797979;
+}
+
+section .intro--wrapper--greeting h1{
+  color: #111;
+  letter-spacing: 0.5;
+  line-height: 3rem;
+  font-size: 4.5rem;
+  margin: 10px 0;
+}
+
+section .intro--wrapper--greeting h4{
+  font-weight: 500;
+  color: #111;
+  font-size: 4rem;
+  line-height: 30px;
+  margin: 30px 0;
+}
+
+section .intro--wrapper--greeting h4 .V{
+  color: red;
+}
+
+section .intro--wrapper--greeting h4 .K{
+  color: blue;
+}
+
+section .intro--wrapper--greeting h4 .U {
+  color: yellow;
+}
+
+
+/* social button  */
+.social--wrapper {
+  float: left;
+  display: flex;
+}
+
+.social .button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  margin: 0 5px;
+  background: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.social .button:hover {
+  width: 120px;
+}
+
+.social .button:nth-child(1):hover .icon {
+  color: var(--primary-color);
+  background: #4267b2;
+}
+
+.social .button:nth-child(2):hover .icon {
+  background-image: linear-gradient(#1a1a46, #1d1daf);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social .button:nth-child(3):hover .icon {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social .button:nth-child(4):hover .icon {
+  background: linear-gradient(
+    to right,
+    #4285f4,
+    #bb001b,
+    #ea4335,
+    #fbbc05,
+    #34a853
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social .button .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  box-sizing: border-box;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+
+.social .button .icon i {
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #111;
+  transition: all 0.3s ease-out;
+}
+
+.social .button .icon:hover i {
+  color: var(--primary-color);
+}
+
+.social .button span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.social .button:nth-child(1):hover span {
+  color: #1473e6;
+}
+
+.social .button:nth-child(2):hover span {
+  color: #1473e6;
+}
+
+.social .button:nth-child(3):hover span {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social .button:nth-child(4):hover span {
+  background: linear-gradient(
+    to right,
+    #4285f4,
+    #bb001b,
+    #ea4335,
+    #fbbc05,
+    #34a853
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-box{
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.image-box img{
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: bottom 1s, left 1s;
+}
+
+.image-box .main-image{
+  height: 135%;
+}
+
+.image-box:hover .back-image{
+  bottom: 40px;
+}
+
+.image-box:hover .main-image{
+  left: 40px;
+}
