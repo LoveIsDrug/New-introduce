@@ -2,12 +2,16 @@
     --header-height: 70px;
     --footer-height: 120px;
 
-    --primary-color: #fff;
+    --background-image: url("/assets/image/bg.png");
+    --text-color: #111;
+    --hover-line-color: #3d6ef7;
     --secondary-color: #797979;
 }
 
 .dark-theme{
-    --primary-color: #2B2B2B;
+    --background-image: url("/assets/image/darkbg.png");
+    --text-color: #fff;
+    --hover-line-color: red;
     --secondary-color: #797979;
 }
 

@@ -1,6 +1,6 @@
 .main{
   width: 100%;
-  background-image: url("/assets/image/bg.PNG");
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +35,7 @@ nav .menu li {
 nav .menu li .menu-link{
   text-decoration: none;
   font-weight: 600;
-  color: #111;
+  color: var(--text-color);
   font-size: 1.6rem;
 }
 
@@ -57,14 +57,14 @@ nav .menu li .menu-link{
 .line-effect{
   width: 0px;
   height: 2px;
-  background-color: #3d6ef7;
+  background-color: var(--hover-line-color);
   position: fixed;
   pointer-events: none;
   transition: all 0.25s linear;
 }
 
-.dark{
-  width: 40px;
+#dark{
+  width: 30px;
   cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ section .intro--wrapper--greeting h2{
 }
 
 section .intro--wrapper--greeting h1{
-  color: #111;
+  color: var(--text-color);
   letter-spacing: 0.5;
   line-height: 3rem;
   font-size: 4.5rem;
@@ -104,7 +104,7 @@ section .intro--wrapper--greeting h1{
 
 section .intro--wrapper--greeting h4{
   font-weight: 500;
-  color: #111;
+  color: var(--text-color);
   font-size: 4rem;
   line-height: 30px;
   margin: 30px 0;
@@ -135,7 +135,7 @@ section .intro--wrapper--greeting h4 .U {
   height: 40px;
   border-radius: 100rem;
   margin: 0 5px;
-  background: var(--primary-color);
+  background: #fff;
   cursor: pointer;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out;
@@ -147,7 +147,7 @@ section .intro--wrapper--greeting h4 .U {
 }
 
 .social .button:nth-child(1):hover .icon {
-  color: var(--primary-color);
+  color: #111;
   background: #4267b2;
 }
 
@@ -208,7 +208,7 @@ section .intro--wrapper--greeting h4 .U {
 }
 
 .social .button .icon:hover i {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .social .button span {
