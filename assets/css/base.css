@@ -20,7 +20,9 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
+
 *{
     box-sizing: inherit;
     margin: 0;
@@ -28,7 +30,9 @@ html {
 }
 
 .grid__full-width{
-    width: 100%;
+  max-width: 1440px;
+  padding: 0 30px;
+  margin: auto;
 }
 .grid__row{
     display: flex;

@@ -1,0 +1,6 @@
+Bug social icon hover 
+bigger Logo
+dark theme
+typing color 
+patern blobs color
+navbar color scroll

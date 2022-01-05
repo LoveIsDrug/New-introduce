@@ -23,79 +23,136 @@
   </head>
   <body>
     <div class="main">
-      <div class="grid wide">
-        <nav>
-          <div class="logoNSlogan__wrapper">
-            <img src="./assets/image/LogoS.png" alt="" class="logo">
-            <h5 class="Slogan">//I never fall in luv again!</h5>
+        <nav class="navbar">
+          <div class="grid__full-width">
+            <div class="logoNSlogan__wrapper">
+              <img src="./assets/image/SNew.png" alt="" class="logo">
+              <h5 class="Slogan">//I never fall in luv again!</h5>
+            </div>
+            <ul class="menu">
+              <li class="link active"><a href="#" class="menu-link ">HOME</a></li>
+              <li class="link"><a href="#" class="menu-link">PROJECT</a></li>
+              <li class="link"><a href="#" class="menu-link">ABOUT</a></li>
+              <li class="link"><a href="#" class="menu-link">CONTACT</a></li>
+              <img src="./assets/image/moon.png" alt="" id="dark">
+            </ul>
+            <div class="menu-btn">
+              <i class="fas fa-bars"></i> 
+            </div>
           </div>
-          <ul class="menu">
-            <li><a href="#intro" class="menu-link">HOME</a></li>
-            <li><a href="#" class="menu-link">ABOUT</a></li>
-            <li><a href="#" class="menu-link">GAME</a></li>
-            <li><a href="#" class="menu-link">MUSIC</a></li>
-            <li><a href="#" class="menu-link">CONTACT</a></li>
-            <img src="./assets/image/moon.png" alt="" id="dark">
-          </ul>
         </nav>
-        
-        <div class="grid__row">
+        <div class="grid wide">
+          <div class="grid__row">
 
-          <!-- HOME Section -->
-
-          <section id="intro">
-            <div class="grid__column-7">
-              <div class="intro--wrapper--greeting">
-                <div class="intro--greeting">
-                  <h2>HEY THERE!</h2>
-                  <h1>I'M DANG THAI SON</h1>
-                  <h4>FROM       <span class="V">V</span><span class="K">K</span><span class="U">U</span>
-                  </h4>
-                  <div class="social--wrapper">
-                    <div class="social">
-                      <div class="button">
-                        <a href="https://www.facebook.com/abzudjxi" class="icon">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <span>Facebook</span>
-                      </div>
-                      <div class="button">
-                        <a href="#" class="icon">
-                          <i class="fab fa-steam-symbol"></i>
-                        </a>
-                        <span>Steam</span>
-                      </div>
-                      <div class="button">
-                        <a href="#" class="icon">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                        <span>Instagram</span>
-                      </div>
-                      <div class="button">
-                        <a href="#" class="icon">
-                          <i class="far fa-envelope"></i>
-                        </a>
-                        <span>Gmail</span>
+            <!-- HOME Section -->
+  
+            <section class="intro-section active">
+              <div class="grid__column-7">
+                <div class="intro--wrapper--greeting">
+                  <div class="intro--greeting">
+                    <h2>HEY THERE!</h2>
+                    <h1>I'M DANG THAI SON</h1>
+                    <h4>FROM <span class="type"></span></h4>      
+                    <div class="social--wrapper">
+                      <div class="social">
+                        <div class="button">
+                          <a href="https://www.facebook.com/abzudjxi" class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <span>Facebook</span>
+                        </div>
+                        <div class="button">
+                          <a href="#" class="icon">
+                            <i class="fab fa-steam-symbol"></i>
+                          </a>
+                          <span>Steam</span>
+                        </div>
+                        <div class="button">
+                          <a href="#" class="icon">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                          <span>Instagram</span>
+                        </div>
+                        <div class="button">
+                          <a href="#" class="icon">
+                            <i class="far fa-envelope"></i>
+                          </a>
+                          <span>Gmail</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="grid__column-5">
-              <div class="image-box">
-                <img src="./assets/image/pattern.png" alt="Image" class="back-image">
-                <img src="./assets/image/anh.png" alt="Image" class="main-image">
+              <div class="grid__column-5">
+                <div class="image-box">
+                  <img src="./assets/image/pattern.png" alt="Image" class="back-image">
+                  <img src="./assets/image/anh.png" alt="Image" class="main-image">
+                </div>
               </div>
-            </div>
-          </section>
-
-          <!-- ABOUT Section -->
-          
+            </section>
+  
+            <!-- Project Section  -->
+            <section class="project-section ">
+              <h1 class="project-heading">Some of my project</h1>
+              <div class="project-container">
+                <div class="project-card">
+                  <div class="project__music--thumb">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <h3 class="project__music-name"></h3>
+                  <input type="range" name="range" id="range" class="range" />
+                  <audio src="/assets/music/DuChoMaiVeSau.mp3" id="song"></audio>
+                  <div class="timer">           
+                    <div class="remaining"></div>    
+                    <div class="duration"></div>
+                  </div>
+                  <div class="controls">
+                    <ion-icon name="infinite-outline" class="play-infinite"></ion-icon>
+                    <ion-icon name="play-back" class="play-back"></ion-icon>
+                    <div class="play">
+                      <div class="player-inner">
+                        <ion-icon name="play" class="play-icon"></ion-icon>
+                      </div>
+                    </div>   
+                    <ion-icon name="play-forward" class="play-forward"></ion-icon>
+                    <ion-icon name="repeat-outline" class="play-repeat"></ion-icon>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-img"></div>
+                  <div class="project-content">
+                    <h1 class="project-title">Music</h1>
+                    <p class="project-Infor">Ung dung nghe nhac</p>
+                    <button class="project-btn">Click to open</button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-img"></div>
+                  <div class="project-content">
+                    <h1 class="project-title">Music</h1>
+                    <p class="project-Infor">Ung dung nghe nhac</p>
+                    <button class="project-btn">Click to open</button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-img"></div>
+                  <div class="project-content">
+                    <h1 class="project-title">Music</h1>
+                    <p class="project-Infor">Ung dung nghe nhac</p>
+                    <button class="project-btn">Click to open</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
