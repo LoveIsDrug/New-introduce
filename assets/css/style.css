@@ -110,7 +110,8 @@ section {
 }
 
 .intro-section.active,
-.project-section.active
+.project-section.active,
+.about-section.active
 {
   position: relative;
   opacity: 1;
@@ -521,4 +522,14 @@ section .intro--wrapper--greeting h4 span{
 
 .project-card:hover .project-content{
   opacity: 1;
+}
+
+/* about style  */
+.about-section{
+  min-height: 100vh;
+  padding: 150px 100px 100px;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
 }
