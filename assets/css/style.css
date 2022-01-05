@@ -16,6 +16,11 @@
   line-height: 40px;
 }
 
+.navbar.sticky{
+  padding:  5px 0;
+  background: #fff;
+}
+
 .navbar .grid__full-width{
   display: flex;
   justify-content: space-between;
@@ -48,7 +53,7 @@
   transition: .5s;
 }
 
-.link.active
+.navbar .menu .link.active
 {
   color: blue;
 }
