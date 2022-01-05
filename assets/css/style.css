@@ -533,6 +533,7 @@ section .intro--wrapper--greeting h4 span{
   top: 0;
   opacity: 0;
   transition: 1s;
+  z-index: 0;
 }
 
 .contact-section{
@@ -542,4 +543,5 @@ section .intro--wrapper--greeting h4 span{
   top: 0;
   opacity: 0;
   transition: 1s;
+  z-index: 0;
 }
