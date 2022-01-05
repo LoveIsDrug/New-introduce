@@ -111,7 +111,8 @@ section {
 
 .intro-section.active,
 .project-section.active,
-.about-section.active
+.about-section.active,
+.contact-section
 {
   position: relative;
   opacity: 1;
@@ -526,6 +527,15 @@ section .intro--wrapper--greeting h4 span{
 
 /* about style  */
 .about-section{
+  min-height: 100vh;
+  padding: 150px 100px 100px;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.contact-section{
   min-height: 100vh;
   padding: 150px 100px 100px;
   position: fixed;

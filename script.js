@@ -236,5 +236,3 @@ $(document).ready(function(){
     }
   })
 });
-
-alert.log("web khong duoc ho tro tren dien thoai");
