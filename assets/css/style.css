@@ -28,7 +28,7 @@
 }
 
 .navbar .logo {
-  width: 80px;
+  width: 100px;
   cursor: pointer;
 }
 
@@ -61,6 +61,51 @@
 .logoNSlogan__wrapper{
   display: flex;
   margin: auto 0;
+}
+
+.heart{
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background: #f20044;
+  transform: rotate(-45deg);
+  box-shadow: -1px 1px 20px red;
+  top: 25px;
+  animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart{
+  0%{
+    transform: rotate(-45deg) scale(1.05);
+  }
+  50%{
+    transform: rotate(-45deg) scale(1.0);
+  }
+  100%{
+    transform: rotate(-45deg) scale(1.06);
+  }
+}
+
+.heart::before{
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50px;
+  box-shadow: -1px -1px 20px red;
+}
+
+.heart::after{
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #f20044;
+  right: -50%;
+  border-radius: 50px;
+  box-shadow: 1px 1px 20px red;
 }
 
 .Slogan{
@@ -112,7 +157,7 @@ section {
 .intro-section.active,
 .project-section.active,
 .about-section.active,
-.contact-section
+.contact-section.active
 {
   position: relative;
   opacity: 1;
@@ -348,6 +393,7 @@ section .intro--wrapper--greeting h4 span{
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .project-container{
@@ -543,5 +589,117 @@ section .intro--wrapper--greeting h4 span{
   top: 0;
   opacity: 0;
   transition: 1s;
-  z-index: 0;
+}
+
+.contact-heading{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 8rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.contact-section .contact-content{
+  display: flex;
+}
+
+.contact-section .contact-content .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-section .contact-content p{
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+
+.contact-section .contact-content .rows{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact-section .contact-content .icons{
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.contact-section .contact-content .rows .infor{
+  line-height: 2rem;
+  margin-left: 30px;
+}
+
+.contact-section .contact-content .rows i{
+  font-size: 2.5rem;
+  color: crimson;
+}
+
+.contact-section .contact-content .rows .infor .head{
+  font-weight: 500;
+}
+
+.contact-section .contact-content .rows .infor .sub-title{
+  color: #333;
+}
+
+.contact-section .contact-content form .fields{
+  display: flex;
+}
+.contact-section .contact-content form .field,
+.contact-section .contact-content form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-section .contact-content form .textarea{
+  height: 80px;
+  width: 100%;
+}
+
+.contact-section .contact-content form .name{
+  margin-right: 10px;
+}
+
+.contact-section .contact-content form .email{
+  margin-left: 10px;
+}
+
+.contact-section .contact-content form .field input,
+.contact-section .contact-content form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+}
+
+.contact-section .contact-content form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact-section .contact-content form .button{
+  height: 50px;
+  width: 170px;
+}
+
+.contact-section .contact-content form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-section .contact-content form .button button:hover{
+  color: crimson;
+  background: #fff;
 }
