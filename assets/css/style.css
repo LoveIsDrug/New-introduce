@@ -39,12 +39,12 @@
   margin: auto 0;
 }
 
-.navbar .menu li {
+.navbar .menu .link {
   display: inline-block;
   margin: 10px 20px;
   list-style: none;
 }
-.navbar .menu li .menu-link{
+.navbar .menu .link .menu-link{
   text-decoration: none;
   font-weight: 600;
   color: var(--text-color);
@@ -53,7 +53,7 @@
   transition: .5s;
 }
 
-.navbar .menu .link.active
+.menu .link.active
 {
   color: blue;
 }
@@ -108,7 +108,7 @@
   box-shadow: 1px 1px 20px red;
 }
 
-.Slogan{
+/* .Slogan{
   font-family: "Caveat", cursive;
   font-size: 2.4rem;
   font-weight: 600;
@@ -116,7 +116,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .line-effect{
   width: 0px;
@@ -145,6 +145,27 @@ section {
   min-height: 100vh;
 }
 
+section .heading {
+  position: relative;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section .heading::after{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: crimson;
+  padding: 0 5px;
+}
+
+
 /* intro  */
 .intro-section{
   display: flex;
@@ -168,6 +189,7 @@ section .intro--wrapper--greeting{
   position: relative;
   right: 20px;
   height: 100%;
+  line-height: 4rem;
   font-family: 'Ubuntu', sans-serif;
   display:flex;
   align-items:center;
@@ -187,7 +209,6 @@ section .intro--wrapper--greeting h2{
 section .intro--wrapper--greeting h1{
   color: var(--text-color);
   letter-spacing: 0.5;
-  line-height: 3rem;
   font-size: 4.5rem;
   margin: 10px 0;
 }
@@ -388,12 +409,8 @@ section .intro--wrapper--greeting h4 span{
   transition: 1s;
 }
 
-.project-heading {
-  font-size: 10rem;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: 'Ubuntu', sans-serif;
+.project-section .heading::after{
+  content: "-Some project of me-";
 }
 
 .project-container{
@@ -579,7 +596,11 @@ section .intro--wrapper--greeting h4 span{
   top: 0;
   opacity: 0;
   transition: 1s;
-  z-index: 0;
+}
+
+/* Contact Style */
+.contact-section .heading::after{
+  content: "-Get in Touch-";
 }
 
 .contact-section{
@@ -589,14 +610,6 @@ section .intro--wrapper--greeting h4 span{
   top: 0;
   opacity: 0;
   transition: 1s;
-}
-
-.contact-heading{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 8rem;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 100px;
 }
 
 .contact-section .contact-content{
