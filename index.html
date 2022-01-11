@@ -25,21 +25,24 @@
   <body>
     <div class="main">
         <nav class="navbar">
-          <div class="grid__full-width">
-            <div class="logoNSlogan__wrapper">
-              <img src="./assets/image/Snew.png" alt="" class="logo">
-              <div class="heart"></div>
+          <div class="grid wide">
+            <div class="grid__full-width">
+              <div class="logoNSlogan__wrapper">
+                <img src="./assets/image/Snew.png" alt="" class="logo">
+                <div class="heart"></div>
+              </div>
+              <ul class="menu">
+                <li class="link active"><a href="#" class="menu-link ">HOME</a></li>
+                <li class="link"><a href="#" class="menu-link">PROJECT</a></li>
+                <li class="link"><a href="#" class="menu-link">ABOUT</a></li>
+                <li class="link"><a href="#" class="menu-link">CONTACT</a></li>
+                <img src="./assets/image/moon.png" alt="" id="dark">
+              </ul>
+              <div class="menu-btn">
+                <i class="fas fa-bars"></i> 
+              </div>
             </div>
-            <ul class="menu">
-              <li class="link active"><a href="#" class="menu-link ">HOME</a></li>
-              <li class="link"><a href="#" class="menu-link">PROJECT</a></li>
-              <li class="link"><a href="#" class="menu-link">ABOUT</a></li>
-              <li class="link"><a href="#" class="menu-link">CONTACT</a></li>
-              <img src="./assets/image/moon.png" alt="" id="dark">
-            </ul>
-            <div class="menu-btn">
-              <i class="fas fa-bars"></i> 
-            </div>
+
           </div>
         </nav>
         <div class="grid wide">
@@ -98,27 +101,32 @@
               <h1 class="heading">My Project</h1>
               <div class="project-container">
                 <div class="project-card">
-                  <div class="project__music--thumb">
-                    <img src="https://source.unsplash.com/random" alt="" />
+                  <div class="project--cover">
+                    <img src="./assets/image/Music.png">
                   </div>
-                  <h3 class="project__music-name"></h3>
-                  <input type="range" name="range" id="range" class="range" />
-                  <audio src="/assets/music/DuChoMaiVeSau.mp3" id="song"></audio>
-                  <div class="timer">           
-                    <div class="remaining"></div>    
-                    <div class="duration"></div>
-                  </div>
-                  <div class="controls">
-                    <ion-icon name="infinite-outline" class="play-infinite"></ion-icon>
-                    <ion-icon name="play-back" class="play-back"></ion-icon>
-                    <div class="play">
-                      <div class="player-inner">
-                        <ion-icon name="play" class="play-icon"></ion-icon>
-                      </div>
-                    </div>   
-                    <ion-icon name="play-forward" class="play-forward"></ion-icon>
-                    <ion-icon name="repeat-outline" class="play-repeat"></ion-icon>
-                  </div>
+                  <div class="project--main">
+                    <div class="project__music--thumb">
+                      <img src="https://source.unsplash.com/random" alt="" />
+                    </div>
+                    <h3 class="project__music-name"></h3>
+                    <input type="range" name="range" id="range" class="range" />
+                    <audio src="/assets/music/DuChoMaiVeSau.mp3" id="song"></audio>
+                    <div class="timer">           
+                      <div class="remaining"></div>    
+                      <div class="duration"></div>
+                    </div>
+                    <div class="controls">
+                      <ion-icon name="infinite-outline" class="play-infinite"></ion-icon>
+                      <ion-icon name="play-back" class="play-back"></ion-icon>
+                      <div class="play">
+                        <div class="player-inner">
+                          <ion-icon name="play" class="play-icon"></ion-icon>
+                        </div>
+                      </div>   
+                      <ion-icon name="play-forward" class="play-forward"></ion-icon>
+                      <ion-icon name="repeat-outline" class="play-repeat"></ion-icon>
+                    </div>
+                  </div>                
                 </div>
                 <div class="project-card">
                   <div class="project-img"></div>

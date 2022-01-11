@@ -139,6 +139,7 @@
   cursor: pointer;
   display: none;
 }
+
 /* body */
 section {
   width: 100%;
@@ -168,9 +169,12 @@ section .heading::after{
 
 /* intro  */
 .intro-section{
-  display: flex;
+  max-height: 100vh;
+  padding: 150px 100px 100px;
   position: fixed;
+  top: 0;
   opacity: 0;
+  display: flex;
   transition: .25s;
   top: 0;
 }
@@ -222,18 +226,7 @@ section .intro--wrapper--greeting h4{
 }
 
 section .intro--wrapper--greeting h4 span{
-  background: linear-gradient(
-    to right,
-    #4285f4,
-    #bb001b,
-    #ea4335,
-    #fbbc05,
-    #34a853
-  );
-  -webkit-background-clip: text;
-  /* Also define standard property for compatibility */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f20044;
 }
 
 /* type Cursor */
@@ -427,6 +420,41 @@ section .intro--wrapper--greeting h4 span{
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 15px 15px 30px;
+}
+
+.project-card .project--cover{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in-out;
+}
+
+.project-card:hover .project--cover{
+  height: 150px;
+  width: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+}
+
+.project-card .project--cover img{
+  max-width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.project-card:hover .project--cover img{
+  max-width: 90px;
 }
 
 .project__music--thumb{
